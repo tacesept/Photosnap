@@ -6,10 +6,10 @@
     <title>Vite App</title>
   </head>
   <body>
-    <header>
-      <div class="container mx-auto my-12 md:my-4">
-        <nav class="flex items-center justify-between">
-          <a href="#">
+    <header class="relative z-20 bg-white uppercase font-bold tracking-[2px]">
+      <div class="container mx-auto py-7 md:py-4">
+        <nav class="flex items-center justify-between px-4 md:px-0 lg:px-8">
+          <a href="/index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
               <defs>
                 <linearGradient
@@ -36,22 +36,98 @@
             <span class="sr-only">photosnap logo</span>
           </a>
           <ul class="max-md:hidden flex gap-10">
-            <li><a href="#">stories</a></li>
-            <li><a href="#">features</a></li>
-            <li><a href="#">pricing</a></li>
+            <li>
+              <a href="/stories.html" class="hover:opacity-30 transition-all duration-150"
+                >stories</a
+              >
+            </li>
+            <li>
+              <a href="/features.html" class="hover:opacity-30 transition-all duration-150"
+                >features</a
+              >
+            </li>
+            <li>
+              <a href="/pricing.html" class="hover:opacity-30 transition-all duration-150"
+                >pricing</a
+              >
+            </li>
           </ul>
-          <a href="#" class="max-md:hidden py-3 px-6 bg-black text-white"
+          <a
+            href="/pricing.html"
+            class="max-md:hidden py-3 px-6 bg-black text-white inline-block hover:bg-[#DFDFDF] hover:text-black transition-all duration-150"
             >get an invite</a
           >
-          <button class="md:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="6">
+          <button
+            id="menuToggle"
+            class="md:hidden cursor-pointer"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              id="iconOpen"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="6"
+            >
               <g fill-rule="evenodd"><path d="M0 0h20v1H0zM0 5h20v1H0z" /></g>
+            </svg>
+            <svg
+              id="iconClose"
+              class="hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="15"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M14.718.075l.707.707L8.707 7.5l6.718 6.718-.707.707L8 8.207l-6.718 6.718-.707-.707L7.293 7.5.575.782l.707-.707L8 6.793 14.718.075z"
+              />
             </svg>
             <span class="sr-only">menu</span>
           </button>
         </nav>
       </div>
+      <!-- mobile menu -->
+      <div
+        class="md:hidden relative opacity-0"
+        id="mobile-menu"
+        aria-hidden="true"
+      >
+        <div class="absolute w-full bg-white text-center">
+          <nav
+            class="flex flex-col gap-4 container mx-auto py-8 px-4 tracking-[2.5px]"
+          >
+            <ul class="flex flex-col gap-4 pb-5 border-b border-black">
+              <li>
+                <a href="/stories.html" class="hover:opacity-30 transition-all duration-150"
+                  >stories</a
+                >
+              </li>
+              <li>
+                <a href="/features.html" class="hover:opacity-30 transition-all duration-150"
+                  >features</a
+                >
+              </li>
+              <li>
+                <a href="/pricing.html" class="hover:opacity-30 transition-all duration-150"
+                  >pricing</a
+                >
+              </li>
+            </ul>
+            <a
+              href="/pricing.html"
+              class="py-3 px-6 bg-black text-white inline-block hover:bg-[#DFDFDF] hover:text-black transition-all duration-150"
+              >get an invite</a
+            >
+          </nav>
+        </div>
+      </div>
     </header>
+    <!-- overlay -->
+    <div
+      id="overlay"
+      class="fixed top-0 left-0 z-10 bg-black opacity-50 w-full h-full hidden md:hidden"
+    ></div> 
 
     <script type="module" src="/src/js/main.js"></script>
   </body>

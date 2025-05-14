@@ -32,4 +32,19 @@ function toggleMenu() {
   }
 }
 
+function resetMenu() {
+  menu.menuToggle.setAttribute("aria-expanded", "false");
+  menu.mobileMenu.setAttribute("aria-hidden", "true");
+  menu.iconOpen.classList.remove("hidden");
+  menu.iconClose.classList.add("hidden");
+  menu.overlay.classList.add("hidden");
+  menu.mobileMenu.classList.remove(
+    "opacity-100",
+    "transition-all",
+    "duration-500"
+  );
+}
+
 menu.menuToggle.addEventListener("click", toggleMenu);
+menu.overlay.addEventListener("click", resetMenu);
+window.addEventListener("resize", resetMenu);

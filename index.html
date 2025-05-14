@@ -8,8 +8,8 @@
   <body>
     <!-- header -->
     <header class="relative z-20 bg-white uppercase font-bold tracking-[2px]">
-      <div class="container mx-auto py-7 md:py-4">
-        <nav class="flex items-center justify-between px-4 md:px-0 lg:px-8 text-xs">
+      <div class="py-7 md:py-4 px-4 md:px-6 lg:px-8">
+        <nav class="max-w-[1110px] mx-auto flex items-center justify-between text-xs">
           <a href="/index.html">
             <svg xmlns="http://www.w3.org/2000/svg" width="170" height="16">
               <defs>
@@ -38,17 +38,23 @@
           </a>
           <ul class="max-md:hidden flex gap-10">
             <li>
-              <a href="/stories.html" class="hover:opacity-30 transition-all duration-150"
+              <a
+                href="/stories.html"
+                class="hover:opacity-30 transition-all duration-150"
                 >stories</a
               >
             </li>
             <li>
-              <a href="/features.html" class="hover:opacity-30 transition-all duration-150"
+              <a
+                href="/features.html"
+                class="hover:opacity-30 transition-all duration-150"
                 >features</a
               >
             </li>
             <li>
-              <a href="/pricing.html" class="hover:opacity-30 transition-all duration-150"
+              <a
+                href="/pricing.html"
+                class="hover:opacity-30 transition-all duration-150"
                 >pricing</a
               >
             </li>
@@ -100,17 +106,23 @@
           >
             <ul class="flex flex-col gap-4 pb-5 border-b border-black">
               <li>
-                <a href="/stories.html" class="hover:opacity-30 transition-all duration-150"
+                <a
+                  href="/stories.html"
+                  class="hover:opacity-30 transition-all duration-150"
                   >stories</a
                 >
               </li>
               <li>
-                <a href="/features.html" class="hover:opacity-30 transition-all duration-150"
+                <a
+                  href="/features.html"
+                  class="hover:opacity-30 transition-all duration-150"
                   >features</a
                 >
               </li>
               <li>
-                <a href="/pricing.html" class="hover:opacity-30 transition-all duration-150"
+                <a
+                  href="/pricing.html"
+                  class="hover:opacity-30 transition-all duration-150"
                   >pricing</a
                 >
               </li>
@@ -128,7 +140,49 @@
     <div
       id="overlay"
       class="fixed top-0 left-0 z-10 bg-black opacity-50 w-full h-full hidden md:hidden"
-    ></div> 
+    ></div>
+
+    <!-- main -->
+    <main>
+      <section class="bg-black max-w-[1440px] mx-auto">
+        <div
+          class="grid grid-cols-1 md:grid-cols-[1fr_0.6fr] lg:grid-cols-[1fr_1.2fr] lg:items-center"
+        >
+          <div class="my-18 mx-7 md:mx-auto text-white md:max-w-[387px]">
+            <h1
+              class="text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem] tracking-[3.33px] md:tracking-[4.17px] font-bold uppercase"
+            >
+              Create and share your photo stories.
+            </h1>
+            <p class="mt-4 leading-[25px] opacity-60">
+              Photosnap is a platform for photographers and visual storytellers.
+              We make it easy to share photos, tell stories and connect with
+              others.
+            </p>
+            <a
+              href="/pricing.html"
+              class="mt-6 flex items-center gap-4 text-xs uppercase font-bold tracking-[2px] group"
+            >
+              <span class="group-hover:underline transition-all duration-150"
+                >get an invite</span
+              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+                <g fill="none" fill-rule="evenodd" stroke="#fff">
+                  <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+                </g>
+              </svg>
+            </a>
+          </div>
+          <div class="-order-1 md:order-2">
+            <img
+              src="/assets/desktop/create-and-share.jpg"
+              alt="create and share"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="/src/js/main.js"></script>
   </body>

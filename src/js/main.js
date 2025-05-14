@@ -47,4 +47,6 @@ function resetMenu() {
 
 menu.menuToggle.addEventListener("click", toggleMenu);
 menu.overlay.addEventListener("click", resetMenu);
-window.addEventListener("resize", resetMenu);
+["resize", "scroll"].forEach((event) => {
+  window.addEventListener(event, resetMenu);
+});

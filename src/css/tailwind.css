@@ -1,1 +1,12 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
+
+.bg-hero-gradient {
+  background: linear-gradient(to right, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
+}
+
+@media (min-width: 768px) {
+  .bg-hero-gradient {
+    background: linear-gradient(to top, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
+  }
+}
+

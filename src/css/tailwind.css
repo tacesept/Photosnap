@@ -10,3 +10,12 @@
   }
 }
 
+@layer components {
+  .section-grid {
+    @apply grid grid-cols-1 md:grid-cols-[1fr_0.51fr] lg:grid-cols-[1fr_1.38fr] lg:items-center;
+  }
+
+  .section-grid.reverse {
+    @apply md:grid-cols-[0.51fr_1fr] lg:grid-cols-[1.38fr_1fr];
+  }
+}

@@ -44,7 +44,7 @@ cards.forEach((card) => {
           </span>
         </div>
         <div>
-          <img src="${card.image}" class="w-full h-full object-cover brightness-70" />
+          <img src="${card.image}" loading="lazy" class="w-full h-full object-cover brightness-70" />
         </div>
         <div
           class="absolute bottom-0 left-0 w-full h-[6px]

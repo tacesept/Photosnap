@@ -167,53 +167,114 @@
       </section>
 
       <!-- pricing section -->
-      <section>
-        <h2 class="sr-only">Plans</h2>
-        <div class="flex justify-center items-center gap-7 md:gap-8">
-          <span>Monthly</span>
-          <label
-            for="BillingCycle"
-            class="relative block h-8 w-14 rounded-full bg-[#DFDFDF] transition-colors has-checked:bg-black"
-          >
-            <input id="BillingCycle" type="checkbox" class="peer sr-only" />
+      <section class="px-4 md:px-6 lg:px-8 mt-16 md:mt-30">
+        <div class="max-w-[1110px] mx-auto">
+          <h2 class="sr-only">Plans</h2>
+          <div class="flex flex-col gap-10 lg:gap-12">
+            <div class="flex justify-center items-center gap-7 md:gap-8">
+              <span>Monthly</span>
+              <label
+                for="BillingCycle"
+                class="relative block h-8 w-14 rounded-full bg-[#DFDFDF] transition-colors has-checked:bg-black"
+              >
+                <input id="BillingCycle" type="checkbox" class="peer sr-only" />
 
-            <span
-              class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-black transition-all peer-checked:start-6 peer-checked:bg-white"
-            ></span>
-          </label>
-          <span>Yearly</span>
-        </div>
-        <div class="grid lg:grid-cols-3 gap-6 lg:gap-7">
-          <div class="px-9 pt-14 pb-10 bg-[#F5F5F5]">
-            <div class="grid text-center md:grid-cols-2 lg:grid-cols-1">
-              <div
-                class="flex flex-col items-center md:items-start lg:items-center gap-5 md:col-start-1"
-              >
-                <h3 class="text-2xl font-bold">Basic</h3>
-                <p class="opacity-60 md:text-left lg:text-center">
-                  Includes basic usage of our platform. Recommended for new and
-                  aspiring photographers.
-                </p>
-              </div>
-              <p
-                class="flex flex-col items-center md:items-end lg:items-center 
-                my-10 md:my-0 lg:my-10 md:col-start-2 lg:col-start-1 md:row-start-1 
-                md:row-end-4 lg:row-start-2"
-              >
-                <span class="text-[2.5rem] leading-[3rem] font-bold"
-                  >$19.00</span
-                >
-                <span class="opacity-60">month</span>
-              </p>
-              <a
-                href="/pricing.html"
-                class="md:col-start-1 md:mt-8 lg:mt-0 py-3 px-6 bg-black text-white 
-                inline-block hover:bg-[#DFDFDF] hover:text-black transition-all
-                uppercase text-sm font-bold tracking-[2px]"
-                >Pick plan</a
-              >
+                <span
+                  class="absolute inset-y-0 start-0 m-1 size-6 rounded-full bg-black transition-all peer-checked:start-6 peer-checked:bg-white"
+                ></span>
+              </label>
+              <span>Yearly</span>
             </div>
-          </div> 
+            <div class="grid lg:grid-cols-3 gap-6 lg:gap-7 items-center">
+              <!-- Basic version -->
+              <div class="px-9 pt-14 pb-10 bg-[#F5F5F5]">
+                <div class="grid text-center md:grid-cols-2 lg:grid-cols-1">
+                  <div
+                    class="flex flex-col items-center md:items-start lg:items-center gap-5 md:col-start-1"
+                  >
+                    <h3 class="text-2xl font-bold">Basic</h3>
+                    <p class="opacity-60 md:text-left lg:text-center">
+                      Includes basic usage of our platform. Recommended for new
+                      and aspiring photographers.
+                    </p>
+                  </div>
+                  <p
+                    class="flex flex-col items-center md:items-end lg:items-center my-10 md:my-0 lg:my-10 md:col-start-2 lg:col-start-1 md:row-start-1 md:row-end-4 lg:row-start-2"
+                  >
+                    <span class="text-[2.5rem] leading-[3rem] font-bold"
+                      >$19.00</span
+                    >
+                    <span class="opacity-60">month</span>
+                  </p>
+                  <a
+                    href="/pricing.html"
+                    class="md:col-start-1 md:mt-8 lg:mt-0 py-3 px-6 bg-black text-white inline-block hover:bg-[#DFDFDF] hover:text-black transition-all uppercase text-sm font-bold tracking-[2px]"
+                    >Pick plan</a
+                  >
+                </div>
+              </div>
+              <!-- Pro version -->
+              <div
+                class="px-9 pt-14 lg:pt-21 pb-10 lg:pb-18 bg-black text-white relative"
+              >
+                <div class="grid text-center md:grid-cols-2 lg:grid-cols-1">
+                  <div
+                    class="flex flex-col items-center md:items-start lg:items-center gap-5 md:col-start-1"
+                  >
+                    <h3 class="text-2xl font-bold">Pro</h3>
+                    <p class="opacity-60 md:text-left lg:text-center">
+                      More advanced features available. Recommended for
+                      photography veterans and professionals.
+                    </p>
+                  </div>
+                  <p
+                    class="flex flex-col items-center md:items-end lg:items-center my-10 md:my-0 lg:my-10 md:col-start-2 lg:col-start-1 md:row-start-1 md:row-end-4 lg:row-start-2"
+                  >
+                    <span class="text-[2.5rem] leading-[3rem] font-bold"
+                      >$39.00</span
+                    >
+                    <span class="opacity-60">month</span>
+                  </p>
+                  <a
+                    href="/pricing.html"
+                    class="md:col-start-1 md:mt-8 lg:mt-0 py-3 px-6 bg-white text-black inline-block hover:bg-[#DFDFDF] hover:text-black transition-all uppercase text-sm font-bold tracking-[2px]"
+                    >Pick plan</a
+                  >
+                </div>
+                <!-- decoration line -->
+                <div
+                  class="absolute w-full md:w-[6px] lg:w-full h-[6px] md:h-full lg:h-[6px] bg-hero-gradient top-0 left-0"
+                ></div>
+              </div>
+              <!-- Business version -->
+              <div class="px-9 pt-14 pb-10 bg-[#F5F5F5]">
+                <div class="grid text-center md:grid-cols-2 lg:grid-cols-1">
+                  <div
+                    class="flex flex-col items-center md:items-start lg:items-center gap-5 md:col-start-1"
+                  >
+                    <h3 class="text-2xl font-bold">Business</h3>
+                    <p class="opacity-60 md:text-left lg:text-center">
+                      Additional features available such as more detailed
+                      metrics. Recommended for business owners.
+                    </p>
+                  </div>
+                  <p
+                    class="flex flex-col items-center md:items-end lg:items-center my-10 md:my-0 lg:my-10 md:col-start-2 lg:col-start-1 md:row-start-1 md:row-end-4 lg:row-start-2"
+                  >
+                    <span class="text-[2.5rem] leading-[3rem] font-bold"
+                      >$99.00</span
+                    >
+                    <span class="opacity-60">month</span>
+                  </p>
+                  <a
+                    href="/pricing.html"
+                    class="md:col-start-1 md:mt-8 lg:mt-0 py-3 px-6 bg-black text-white inline-block hover:bg-[#DFDFDF] hover:text-black transition-all uppercase text-sm font-bold tracking-[2px]"
+                    >Pick plan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

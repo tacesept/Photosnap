@@ -1,8 +1,8 @@
-const togglePlan = document.getElementById("BillingCycle");  
+const togglePlan = document.getElementById("BillingCycle");
 const prices = document.querySelectorAll(".price");
 
-togglePlan.addEventListener("change", () => {
-  const isYearly = togglePlan.checked;   
+function syncPrices() {
+  const isYearly = togglePlan.checked;
 
   prices.forEach((priceEl) => {
     // swap the number
@@ -14,4 +14,8 @@ togglePlan.addEventListener("change", () => {
     const labelEl = priceEl.nextElementSibling;
     labelEl.textContent = isYearly ? "per year" : "per month";
   });
-});
+}
+
+togglePlan.addEventListener("change", syncPrices);
+
+window.addEventListener("DOMContentLoaded", syncPrices);

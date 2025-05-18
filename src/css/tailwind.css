@@ -18,5 +18,5 @@
 
   .section-grid.reverse {
     @apply md:grid-cols-[0.51fr_1fr] lg:grid-cols-[1.38fr_1fr];
-  }
+  } 
 }

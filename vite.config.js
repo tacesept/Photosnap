@@ -8,9 +8,9 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        about: resolve(__dirname, "features.html"),
+        features: resolve(__dirname, "features.html"),
         pricing: resolve(__dirname, "pricing.html"),
-        contact: resolve(__dirname, "stories.html"),
+        stories: resolve(__dirname, "stories.html"),
       },
     },
   },

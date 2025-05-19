@@ -22,6 +22,7 @@ function toggleMenu() {
       "transition-all",
       "duration-500"
     );
+    document.documentElement.classList.remove("overflow-hidden");
   } else {
     console.log("close");
     menu.mobileMenu.classList.remove(
@@ -29,6 +30,7 @@ function toggleMenu() {
       "transition-all",
       "duration-500"
     );
+    document.documentElement.classList.add("overflow-hidden");
   }
 }
 
@@ -46,7 +48,5 @@ function resetMenu() {
 }
 
 menu.menuToggle.addEventListener("click", toggleMenu);
-menu.overlay.addEventListener("click", resetMenu);
-["resize", "scroll"].forEach((event) => {
-  window.addEventListener(event, resetMenu);
-});
+menu.overlay.addEventListener("click", resetMenu); 
+window.addEventListener("resize", resetMenu);

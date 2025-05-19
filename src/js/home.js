@@ -1,8 +1,8 @@
 const cardGrid = document.querySelector(".card-grid");
 
-
-const data = await fetch("/data.json");
-const cards = await data.json(); 
+async function fetchCards() {
+  const data = await fetch("/data.json");
+  const cards = await data.json(); 
 
 cards.slice(0, 4).forEach((card) => {
   const cardElement = document.createElement("li");
@@ -40,3 +40,6 @@ cards.slice(0, 4).forEach((card) => {
   `;
   cardGrid.appendChild(cardElement);
 });
+}
+
+fetchCards();

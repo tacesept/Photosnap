@@ -292,8 +292,13 @@
       <!-- plans comparison -->
       <section class="px-4 md:px-6 lg:px-8 my-16 md:my-30 lg:my-40">
         <div class="max-w-[730px] mx-auto uppercase font-bold">
-          <h2 class="text-[2.5rem] text-center sr-only md:not-sr-only">Compare</h2>
-          <table class="mt-16 lg:mt-14 w-full border-collapse text-xs max-md:hidden">
+          <h2 class="text-[2.5rem] text-center sr-only md:not-sr-only">
+            Compare
+          </h2>
+          <!-- for desktop -->
+          <table
+            class="mt-16 lg:mt-14 w-full border-collapse text-xs max-md:hidden"
+          >
             <thead class="border-b border-black [&_th]:pb-6">
               <tr>
                 <th class="text-left">The Features</th>
@@ -302,7 +307,7 @@
                 <th class="w-1/6">Business</th>
               </tr>
             </thead>
-            <tbody class="text-center [&_td]:py-6 divide-y divide-[#DFDFDF]">
+            <tbody class="text-center [&_td]:py-6 divide-y divide-[#DFDFDF] border-b border-[#DFDFDF]">
               <tr>
                 <td class="text-left">Unlimited story posting</td>
                 <td>
@@ -408,7 +413,7 @@
               <tr>
                 <td class="text-left">Embedding custom content</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Pro plan</span>
@@ -446,7 +451,7 @@
               <tr>
                 <td class="text-left">Custom metadata</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Pro plan</span>
@@ -484,10 +489,10 @@
               <tr>
                 <td class="text-left">Advanced metrics</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
-                  <span class="sr-only">Is not included in Pro plan</span> 
+                  <span class="sr-only">Is not included in Pro plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Business plan</span>
@@ -509,10 +514,10 @@
               <tr>
                 <td class="text-left">Photo downloads</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
-                  <span class="sr-only">Is not included in Pro plan</span> 
+                  <span class="sr-only">Is not included in Pro plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Business plan</span>
@@ -534,10 +539,10 @@
               <tr>
                 <td class="text-left">Search engine indexing</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
-                  <span class="sr-only">Is not included in Pro plan</span> 
+                  <span class="sr-only">Is not included in Pro plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Business plan</span>
@@ -559,10 +564,10 @@
               <tr>
                 <td class="text-left">Custom analytics</td>
                 <td>
-                  <span class="sr-only">Is not included in Basic plan</span> 
+                  <span class="sr-only">Is not included in Basic plan</span>
                 </td>
                 <td>
-                  <span class="sr-only">Is not included in Pro plan</span> 
+                  <span class="sr-only">Is not included in Pro plan</span>
                 </td>
                 <td>
                   <span class="sr-only">Included in Business plan</span>
@@ -582,7 +587,331 @@
                 </td>
               </tr>
             </tbody>
-          </table> 
+          </table>
+          <!-- for mobile -->
+          <div class="md:hidden text-xs">
+            <h2 class="border-b border-black pb-6">The features</h2>
+            <dl class="divide-y divide-[#DFDFDF] border-b border-[#DFDFDF] [&_span]:opacity-50">
+              <div class="py-6">
+                <dt class="mb-4">Unlimited story posting</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Unlimited photo upload</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Embedding custom content</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Custom metadata</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Advanced metrics</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span> 
+                    <span class="sr-only">Is not included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Photo downloads</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span> 
+                    <span class="sr-only">Is not included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Search engine indexing</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span> 
+                    <span class="sr-only">Is not included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+              <div class="py-6">
+                <dt class="mb-4">Custom analytics</dt>
+                <dd class="grid grid-cols-3 items-left">
+                  <div class="flex flex-col gap-2">
+                    <span>basic</span> 
+                    <span class="sr-only">Is not included in Basic plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>Pro</span> 
+                    <span class="sr-only">Is not included in Pro plan</span>
+                  </div>
+                  <div class="flex flex-col gap-2">
+                    <span>business</span>
+                    <svg
+                      class="inline-block"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="15"
+                    >
+                      <path
+                        fill="none"
+                        stroke="#000"
+                        stroke-width="2"
+                        d="M1 8.124L5.623 13 17 1"
+                      />
+                    </svg>
+                    <span class="sr-only">Included in Business plan</span>
+                  </div>
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
     </main>

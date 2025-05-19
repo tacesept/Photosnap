@@ -1,29 +1,10 @@
 const cardGrid = document.querySelector(".card-grid");
 
-const cards = [
-  {
-    title: "The Mountains",
-    author: "by John Appleseed",
-    image: "/assets/desktop/cards/mountains.jpg",
-  },
-  {
-    title: "Sunset Cityscapes",
-    author: "by Benjamin Cruz",
-    image: "/assets/desktop/cards/cityscapes.jpg",
-  },
-  {
-    title: "18 Days Voyage",
-    author: "by Alexei Borodin",
-    image: "/assets/desktop/cards/18-days-voyage.jpg",
-  },
-  {
-    title: "Architecturals",
-    author: "by Samantha Brooke",
-    image: "/assets/desktop/cards/architecturals.jpg",
-  },
-];
 
-cards.forEach((card) => {
+const data = await fetch("/data.json");
+const cards = await data.json(); 
+
+cards.slice(0, 4).forEach((card) => {
   const cardElement = document.createElement("li");
   cardElement.classList.add("card");
   cardElement.innerHTML = `

@@ -1,9 +1,20 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "DMSans";
+  src: url("/fonts/dm-sans-v1.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap; /* ensures text is visible immediately */
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
 
 .bg-hero-gradient,
 .border-gradient {
   background: linear-gradient(to right, #ffc593 0%, #bc7198 52%, #5a77ff 100%);
-} 
+}
 
 @media (min-width: 768px) {
   .bg-hero-gradient {
@@ -18,5 +29,27 @@
 
   .section-grid.reverse {
     @apply md:grid-cols-[0.51fr_1fr] lg:grid-cols-[1.38fr_1fr];
-  } 
+  }
+ 
 }
+
+@layer utilities {
+  .bg-beta {
+    @apply bg-center bg-cover;
+    /* ultimate fallback */
+    background-image: url('/images/optimized/bg-beta/bg-beta.jpg');
+    /* modern browsers */
+    background-image: image-set(
+      url('/images/optimized/bg-beta/1200.avif')   type('image/avif')   1x,
+      url('/images/optimized/bg-beta/1200.webp')   type('image/webp')   1x,
+      url('/images/optimized/bg-beta/bg-beta.jpg')    type('image/jpeg')   1x
+    );
+    /* Safari/WebKit */
+    background-image: -webkit-image-set(
+      url('/images/optimized/bg-beta/1200.avif')   type('image/avif')   1x,
+      url('/images/optimized/bg-beta/1200.webp')   type('image/webp')   1x,
+      url('/images/optimized/bg-beta/bg-beta.jpg')    type('image/jpeg')   1x
+    );
+  }
+}
+

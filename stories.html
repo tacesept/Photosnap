@@ -4,7 +4,17 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Discover inspiring stories from photographers around the world. Share your own story and showcase your photography on Photosnap's storytelling platform." />
+    <link
+      rel="preload"
+      href="/fonts/dm-sans-v1.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <meta
+      name="description"
+      content="Discover inspiring stories from photographers around the world. Share your own story and showcase your photography on Photosnap's storytelling platform."
+    />
     <title>Photosnap | Stories</title>
   </head>
   <body>
@@ -95,7 +105,9 @@
       <!-- mobile menu -->
       <div
         class="md:hidden relative opacity-0"
-        id="mobile-menu" 
+        id="mobile-menu"
+        aria-hidden="true"
+        hidden
       >
         <div class="absolute w-full bg-white text-center">
           <nav
@@ -138,13 +150,41 @@
       <!-- hero section -->
       <section class="max-w-[1440px] mx-auto">
         <div class="bg-black text-white relative">
-          <figure class="h-[317px] md:h-[650px]">
-            <img
-              src="/assets/desktop/moon-of-appalacia.jpg"
-              class="w-full h-full object-cover"
+          <picture class="h-[317px] md:h-[650px]">
+            <!-- AVIF source -->
+            <source
+              type="image/avif"
+              srcset="
+                /images/optimized/moon-of-appalacia/480.avif   480w,
+                /images/optimized/moon-of-appalacia/768.avif   768w,
+                /images/optimized/moon-of-appalacia/1200.avif 1200w
+              "
+              sizes="(max-width:639px)100vw,(max-width:1023px)768px,1200px"
             />
-          </figure>
-          <div class="section-grid md:absolute md:top-0 md:left-0 md:h-full md:w-full md:items-center">
+
+            <!-- WebP source -->
+            <source
+              type="image/webp"
+              srcset="
+                /images/optimized/moon-of-appalacia/480.webp   480w,
+                /images/optimized/moon-of-appalacia/768.webp   768w,
+                /images/optimized/moon-of-appalacia/1200.webp 1200w
+              "
+              sizes="(max-width:639px)100vw,(max-width:1023px)768px,1200px"
+            />
+
+            <!-- JPEG fallback -->
+            <img
+              src="/images/optimized/moon-of-appalacia/1200.jpg"
+              width="1200"
+              height="800"
+              alt="moon of appalacia"
+              loading="eager"
+            />
+          </picture>
+          <div
+            class="section-grid md:absolute md:top-0 md:left-0 md:h-full md:w-full md:items-center"
+          >
             <div class="flex flex-col my-12 mx-7 md:mx-auto md:max-w-[387px]">
               <h1
                 class="text-[2.5rem] leading-[3rem] font-bold tracking-[4.17px] my-4 md:mt-6"
@@ -182,7 +222,8 @@
       </section>
 
       <!-- stories section -->
-       <section class="max-w-[1440px] mx-auto" aria-label="story cards">
+      <section class="max-w-[1440px] mx-auto">
+        <h2 class="sr-only">Story cards</h2>
         <ul
           class="card-grid grid md:grid-cols-2 lg:grid-cols-4 w-full text-shadow-lg"
         ></ul>

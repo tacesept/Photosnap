@@ -8,7 +8,7 @@ cards.forEach((card) => {
   const cardElement = document.createElement("li");
   cardElement.classList.add("card");
   cardElement.innerHTML = `
-    <li>
+    <div>
       <a href="/stories.html" class="block group">
       <div class="relative group-hover:translate-y-[-40px] transition-all"> 
         <div class="absolute bottom-0 left-0 z-10 p-10 text-white font-bold w-full">
@@ -24,10 +24,24 @@ cards.forEach((card) => {
               </g>
             </svg>
           </span>
-        </div>
-        <div>
-          <img src="${card.image}" loading="lazy" alt="${card.title}" class="w-full h-full object-cover brightness-70" />
-        </div>
+        </div> 
+        <picture class="w-full h-full object-cover brightness-70"> 
+            <source
+              type="image/avif"
+              srcset="${card.image[1]}"
+            /> 
+            <source
+              type="image/webp"
+              srcset="${card.image[2]}" 
+            /> 
+            <img
+              src="${card.image[0]}"
+              width="1200"
+              height="800"
+              alt="${card.title}"
+              loading="lazy"
+            />
+          </picture>
         <div
           class="absolute bottom-0 left-0 w-full h-[6px]
            border-gradient
@@ -37,7 +51,7 @@ cards.forEach((card) => {
         ></div>
         </div>
       </a>
-    </li>
+    </div>
   `;
   cardGrid.appendChild(cardElement);
 });

@@ -4,111 +4,175 @@
     "title": "The Mountains",
     "author": "by John Appleseed",
     "date": "April 16th 2020",
-    "image": "/assets/desktop/cards/mountains.jpg"
+    "image": [
+      "/images/optimized/cards/mountains/mountains.jpg",
+      "/images/optimized/cards/mountains/1200.avif",
+      "/images/optimized/cards/mountains/1200.webp"
+    ]
   },
   {
     "id": 2,
     "title": "Sunset Cityscapes",
     "author": "by Benjamin Cruz",
     "date": "April 14th 2020",
-    "image": "/assets/desktop/cards/cityscapes.jpg"
+    "image": [
+      "/images/optimized/cards/cityscapes/cityscapes.jpg",
+      "/images/optimized/cards/cityscapes/1200.avif",
+      "/images/optimized/cards/cityscapes/1200.webp"
+    ]
   },
   {
     "id": 3,
     "title": "18 Days Voyage",
     "author": "by Alexei Borodin",
     "date": "April 11th 2020",
-    "image": "/assets/desktop/cards/18-days-voyage.jpg"
+    "image": [
+      "/images/optimized/cards/18-days-voyage/18-days-voyage.jpg",
+      "/images/optimized/cards/18-days-voyage/1200.avif",
+      "/images/optimized/cards/18-days-voyage/1200.webp"
+    ]
   },
   {
     "id": 4,
     "title": "Architecturals",
     "author": "by Samantha Brooke",
     "date": "April 9th 2020",
-    "image": "/assets/desktop/cards/architecturals.jpg"
+    "image": [
+      "/images/optimized/cards/architecturals/architecturals.jpg",
+      "/images/optimized/cards/architecturals/1200.avif",
+      "/images/optimized/cards/architecturals/1200.webp"
+    ]
   },
   {
     "id": 5,
     "title": "World Tour 2019",
     "author": "by Timothy Wagner",
     "date": "April 7th 2019",
-    "image": "/assets/desktop/cards/world-tour.jpg"
+    "image": [
+      "/images/optimized/cards/world-tour/world-tour.jpg",
+      "/images/optimized/cards/world-tour/1200.avif",
+      "/images/optimized/cards/world-tour/1200.webp"
+    ]
   },
   {
     "id": 6,
     "title": "Unforeseen Corners",
     "author": "by William Malcolm",
     "date": "April 3rd 2020",
-    "image": "/assets/desktop/cards/unforeseen-corners.jpg"
+    "image": [
+      "/images/optimized/cards/unforeseen-corners/unforeseen-corners.jpg",
+      "/images/optimized/cards/unforeseen-corners/1200.avif",
+      "/images/optimized/cards/unforeseen-corners/1200.webp"
+    ]
   },
   {
     "id": 7,
     "title": "King on Africa: Part II",
     "author": "by Timothy Hillenburg",
     "date": "March 29th 2020",
-    "image": "/assets/desktop/cards/king-on-africa.jpg"
+    "image": [
+      "/images/optimized/cards/king-on-africa/king-on-africa.jpg",
+      "/images/optimized/cards/king-on-africa/1200.avif",
+      "/images/optimized/cards/king-on-africa/1200.webp"
+    ]
   },
   {
     "id": 8,
     "title": "The Trip to Nowhere",
     "author": "by Felicia Rourke",
     "date": "March 21th 2020",
-    "image": "/assets/desktop/cards/trip-to-nowhere.jpg"
+    "image": [
+      "/images/optimized/cards/trip-to-nowhere/trip-to-nowhere.jpg",
+      "/images/optimized/cards/trip-to-nowhere/1200.avif",
+      "/images/optimized/cards/trip-to-nowhere/1200.webp"
+    ]
   },
   {
     "id": 9,
     "title": "Rage of the Sea",
     "author": "by Mohamed Abdul",
     "date": "March 19th 2020",
-    "image": "/assets/desktop/cards/rage-of-the-sea.jpg"
+    "image": [
+      "/images/optimized/cards/rage-of-the-sea/rage-of-the-sea.jpg",
+      "/images/optimized/cards/rage-of-the-sea/1200.avif",
+      "/images/optimized/cards/rage-of-the-sea/1200.webp"
+    ]
   },
   {
     "id": 10,
     "title": "Running Free",
     "author": "by Michelle",
     "date": "March 16th 2020",
-    "image": "/assets/desktop/cards/running-free.jpg"
+    "image": [
+      "/images/optimized/cards/running-free/running-free.jpg",
+      "/images/optimized/cards/running-free/1200.avif",
+      "/images/optimized/cards/running-free/1200.webp"
+    ]
   },
   {
     "id": 11,
     "title": "Behind the Waves",
     "author": "by Lamarr Wilson",
     "date": "March 11th 2020",
-    "image": "/assets/desktop/cards/behind-the-waves.jpg"
+    "image": [
+      "/images/optimized/cards/behind-the-waves/behind-the-waves.jpg",
+      "/images/optimized/cards/behind-the-waves/1200.avif",
+      "/images/optimized/cards/behind-the-waves/1200.webp"
+    ]
   },
   {
     "id": 12,
     "title": "Calm Waters",
     "author": "by Samantha Brooke",
     "date": "March 9th 2020",
-    "image": "/assets/desktop/cards/calm-waters.jpg"
+    "image": [
+      "/images/optimized/cards/calm-waters/calm-waters.jpg",
+      "/images/optimized/cards/calm-waters/1200.avif",
+      "/images/optimized/cards/calm-waters/1200.webp"
+    ]
   },
   {
     "id": 13,
     "title": "The Milky Way",
     "author": "by Benjamin Cruz",
     "date": "March 5th 2020",
-    "image": "/assets/desktop/cards/milky-way.jpg"
+    "image": [
+      "/images/optimized/cards/milky-way/milky-way.jpg",
+      "/images/optimized/cards/milky-way/1200.avif",
+      "/images/optimized/cards/milky-way/1200.webp"
+    ]
   },
   {
     "id": 14,
     "title": "Night at the Dark Forest",
     "author": "by Mohammed Abdul",
     "date": "March 4th 2020",
-    "image": "/assets/desktop/cards/dark-forest.jpg"
+    "image": [
+      "/images/optimized/cards/dark-forest/dark-forest.jpg",
+      "/images/optimized/cards/dark-forest/1200.avif",
+      "/images/optimized/cards/dark-forest/1200.webp"
+    ]
   },
   {
     "id": 15,
     "title": "Somwarpet’s Beauty",
     "author": "by Michelle",
     "date": "March 1st 2020",
-    "image": "/assets/desktop/cards/somwarpet.jpg"
+    "image": [
+      "/images/optimized/cards/somwarpet/somwarpet.jpg",
+      "/images/optimized/cards/somwarpet/1200.avif",
+      "/images/optimized/cards/somwarpet/1200.webp"
+    ]
   },
   {
     "id": 16,
     "title": "Land of Dreams",
     "author": "by William Malcolm",
     "date": "February 25th 2020",
-    "image": "/assets/desktop/cards/land-of-dreams.jpg"
+    "image": [
+      "/images/optimized/cards/land-of-dreams/land-of-dreams.jpg",
+      "/images/optimized/cards/land-of-dreams/1200.avif",
+      "/images/optimized/cards/land-of-dreams/1200.webp"
+    ]
   }
 ]

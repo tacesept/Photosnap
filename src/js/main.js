@@ -12,6 +12,7 @@ function toggleMenu() {
   const isOpen = menu.menuToggle.getAttribute("aria-expanded") === "true";
   menu.menuToggle.setAttribute("aria-expanded", String(!isOpen));
   menu.mobileMenu.setAttribute("aria-hidden", String(isOpen));
+  menu.mobileMenu.hidden = isOpen;
   menu.iconOpen.classList.toggle("hidden");
   menu.iconClose.classList.toggle("hidden");
   menu.overlay.classList.toggle("hidden");

@@ -1,7 +1,7 @@
 # 📸 Photosnap – multi-page marketing site  
 A pixel-perfect rebuild of the **Frontend Mentor “Photosnap” design** using **Vite + Tailwind CSS + Vanilla JS**.
 
-[Live Demo](https://photosnap-thawit.netlify.app/) • [Design Brief](https://www.frontendmentor.io/challenges/photosnap-multiPage-website-41lJTw6f6)  
+[Live Demo](https://photosnap-thawit.netlify.app/) • [Design Brief](https://www.frontendmentor.io/challenges/photosnap-multipage-website-nMDSrNmNW)  
 
 ---
 

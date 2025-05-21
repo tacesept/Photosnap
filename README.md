@@ -33,7 +33,7 @@ A pixel-perfect rebuild of the **Frontend Mentor "Photosnap" design** using **Vi
 
 ## 🖥️ Screenshots
 
-![Home Page](screenshots/home.gif) 
+![Home Page](screenshots/home.gif)
 
 ## 📁 Project Structure
 
@@ -50,7 +50,7 @@ photosnap/
 ├── pricing.html      # Pricing page
 ├── vite.config.js    # Vite configuration
 └── package.json      # Project dependencies
-``` 
+```
 
 ## 🏗️ Getting Started
 
@@ -64,7 +64,5 @@ npm run build    # production build to /dist
 
 ## 📞 Contact
 
-- **Portfolio**: [Your Portfolio URL]
-- **Email**: [Your Professional Email]
-- **LinkedIn**: [Your LinkedIn Profile]
-- **GitHub**: [Your GitHub Profile] 
+- **Email**: [thaw280998@gmail.com](mailto:thaw280998@gmail.com)
+- **GitHub**: [@tacesept](https://github.com/tacesept)

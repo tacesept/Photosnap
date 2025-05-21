@@ -18,6 +18,13 @@
     <title>Photosnap | Pricing</title>
   </head>
   <body>
+    <!-- skip to main content -->
+    <a
+      href="#main"
+      class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-white text-black p-2 rounded shadow"
+      >Skip to main content</a
+    >
+
     <!-- header -->
     <header class="relative z-20 bg-white uppercase font-bold tracking-[2px]">
       <div class="py-7 md:py-4 px-4 md:px-6 lg:px-8">
@@ -104,10 +111,10 @@
       </div>
       <!-- mobile menu -->
       <div
-        class="md:hidden relative opacity-0"
-        id="mobile-menu"
-        aria-hidden="true"
+        class="md:hidden relative"
+        id="mobile-menu" 
         hidden
+        tabindex="-1"
       >
         <div class="absolute w-full bg-white text-center">
           <nav
@@ -145,11 +152,11 @@
       class="fixed top-0 left-0 z-10 bg-black opacity-50 w-full h-full hidden md:hidden"
     ></div>
 
-    <!-- main -->
-    <main>
+    <!-- main --> 
+    <main id="main" tabindex="-1">
       <!-- hero section -->
       <section class="bg-black text-white max-w-[1440px] mx-auto">
-        <div class="section-grid">
+        <div class="section-grid md:h-[490px] md:items-center">
           <div class="relative">
             <div class="my-18 mx-7 md:mx-auto md:max-w-[387px]">
               <h1
@@ -198,6 +205,7 @@
               height="800"
               alt="pricing hero"
               loading="eager"
+              class="w-full h-[294px] md:h-full object-cover"
             />
           </picture>
         </div>
@@ -962,9 +970,7 @@
       </section>
 
       <!-- beta -->
-      <section
-        class="px-4 md:px-6 lg:px-8 bg-beta relative uppercase"
-      >
+      <section class="px-4 md:px-6 lg:px-8 bg-beta relative uppercase">
         <div
           class="max-w-[1110px] mx-auto flex flex-col md:flex-row gap-6 md:items-center justify-between font-bold text-white py-16 md:py-17"
         >

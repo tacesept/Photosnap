@@ -5,47 +5,32 @@ const menu = {
   iconOpen: document.getElementById("iconOpen"),
   iconClose: document.getElementById("iconClose"),
   mobileMenu: document.getElementById("mobile-menu"),
-  overlay: document.getElementById("overlay"),
+  overlay: document.getElementById("overlay"), 
 };
 
 function toggleMenu() {
   const isOpen = menu.menuToggle.getAttribute("aria-expanded") === "true";
-  menu.menuToggle.setAttribute("aria-expanded", String(!isOpen));
-  menu.mobileMenu.setAttribute("aria-hidden", String(isOpen));
+  menu.menuToggle.setAttribute("aria-expanded", String(!isOpen)); 
   menu.mobileMenu.hidden = isOpen;
   menu.iconOpen.classList.toggle("hidden");
   menu.iconClose.classList.toggle("hidden");
   menu.overlay.classList.toggle("hidden");
-  if (!isOpen) {
-    console.log("open");
-    menu.mobileMenu.classList.add(
-      "opacity-100",
-      "transition-all",
-      "duration-500"
-    );
-    document.documentElement.classList.remove("overflow-hidden");
-  } else {
-    console.log("close");
-    menu.mobileMenu.classList.remove(
-      "opacity-100",
-      "transition-all",
-      "duration-500"
-    );
+  if (!isOpen) { 
     document.documentElement.classList.add("overflow-hidden");
+    menu.iconOpen.focus();
+  } else { 
+    document.documentElement.classList.remove("overflow-hidden");
+    menu.mobileMenu.focus();
   }
 }
 
 function resetMenu() {
-  menu.menuToggle.setAttribute("aria-expanded", "false");
-  menu.mobileMenu.setAttribute("aria-hidden", "true");
+  menu.menuToggle.setAttribute("aria-expanded", "false"); 
   menu.iconOpen.classList.remove("hidden");
   menu.iconClose.classList.add("hidden");
-  menu.overlay.classList.add("hidden");
-  menu.mobileMenu.classList.remove(
-    "opacity-100",
-    "transition-all",
-    "duration-500"
-  );
+  menu.overlay.classList.add("hidden"); 
+  menu.mobileMenu.hidden = true;
+  document.documentElement.classList.remove("overflow-hidden");
 }
 
 menu.menuToggle.addEventListener("click", toggleMenu);
